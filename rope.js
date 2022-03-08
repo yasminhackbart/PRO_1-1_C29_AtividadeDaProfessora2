@@ -15,7 +15,7 @@ class Rope
       
   this.pointA = pointA;
 
-  //junta cada vertice da corda
+  //agrupa cada vertice da corda
   this.body = Composites.chain(rects, 0.1, 0, -0.6, 0, {stiffness: 0.1, length: 0.1, render: {type: 'line'}});
   
   //cria o "mundo" (fisica, etc) 
@@ -52,8 +52,10 @@ class Rope
     drawVertices(vertices) 
     {
       beginShape();
+      
       //cor de cada vertice
       fill('#FFF717')
+
       //sem borda
       noStroke();
       

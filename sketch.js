@@ -57,7 +57,5 @@ function draw()
 
   //desenha o chão
   ground.show();
-
  
-   
 }
